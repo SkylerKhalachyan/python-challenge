@@ -28,8 +28,6 @@ with open(csvpath) as csvfile:
 
     print(counter)
 
-
-
 #The net total amount of "Profit/Losses" over the entire period
 
 #The changes in "Profit/Losses" over the entire period, and then the average of those changes
