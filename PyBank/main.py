@@ -1,6 +1,6 @@
 import csv
 
-csvpath ="Resources/budget_data.csv"
+csvpath ="PyBank/Resources/budget_data.csv"
 
 mcounter = 0
 plcounter = 0
@@ -75,4 +75,27 @@ minmonth = (month[pldifference.index(gd)+1])
 
 print(f"Greatest Decrease in Profits: {minmonth}  (${gd})")
 
-txtpath ="Analysis/PyBank_Analysis.txt"
+txtpath ="PyBank/Analysis/PyBank_Analysis.txt"
+
+with open(txtpath, 'w') as txtfile:
+
+# Write the first row 
+    txtfile.write(f"Financial Analysis"\
+                  f"\n---------------------------------"\
+                  f"\nTotal Months: {mcounter}"\
+                  f"\nTotal: ${sumpl}"\
+                  f"\nAverage Change: ${avgpldf}"\
+                  f"\nGreatest Increase in Profits: {maxmonth}  (${gi})"\
+                  f"\nGreatest Decrease in Profits: {minmonth}  (${gd})"  )
+
+        # "print(f"Financial Analysis"),
+        #                 print(f"---------------------------------"),print(f"Total Months: {mcounter}",),
+        #                 print(f"Total: ${sumpl}"),print(f"Average Change: ${avgpldf}"),
+        #                  print(f"Greatest Increase in Profits: {maxmonth}  (${gi})"),
+        #                   print(f"Greatest Decrease in Profits: {minmonth}  (${gd})"))
+
+
+    
+    
+
+
